@@ -33,8 +33,7 @@ const AddProduct = () => {
       new Blob([JSON.stringify(product)], { type: "application/json" })
     );
 
-    axios
-      .post("http://localhost:8080/api/product", formData, {
+   axios.post("https://springboot-reactjs-e-commerce.onrender.com/api/product", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
